@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         container.style.position = 'relative';
         container.style.backgroundColor = 'white';
         container.style.padding = '20px';
-        container.style.backgroundImage = 'url("https://github.com/useronlineid/document1/blob/9fb0df763d2b31a53909b636d9372db1f3f5427a/doc.jpg")'; // เปลี่ยน URL นี้ตามรูปของคุณใน GitHub
+        container.style.backgroundImage = 'url("https://raw.githubusercontent.com/useronlineid/document1/0a7cf9b947ce41f8f05e1c009b9bc6d3288ff360/doc.jpg")'; // เปลี่ยน URL นี้ตามรูปของคุณใน GitHub
         container.style.backgroundSize = 'cover';
 
         const data = [
