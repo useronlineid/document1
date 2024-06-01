@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         container.style.position = 'relative';
         container.style.backgroundColor = 'white';
         container.style.padding = '20px';
-        container.style.backgroundImage = 'url("https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY/main/YOUR_IMAGE.png")'; // เปลี่ยน URL นี้ตามรูปของคุณใน GitHub
+        container.style.backgroundImage = 'url("https://github.com/useronlineid/document1/blob/9fb0df763d2b31a53909b636d9372db1f3f5427a/doc.jpg")'; // เปลี่ยน URL นี้ตามรูปของคุณใน GitHub
         container.style.backgroundSize = 'cover';
 
         const data = [
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         html2canvas(container).then(canvas => {
             document.body.removeChild(container);
             const image = new Image();
-            image.src = canvas.toDataURL('https://github.com/useronlineid/document1/blob/9fb0df763d2b31a53909b636d9372db1f3f5427a/doc.jpg');
+            image.src = canvas.toDataURL('image/png');
             image.style.width = '100%';
             image.style.height = 'auto';
 
