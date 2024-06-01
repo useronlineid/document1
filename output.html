@@ -6,7 +6,7 @@
     <title>Output Image</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
+<body>
     <div id="outputContainer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script>
@@ -57,9 +57,14 @@
             document.getElementById('outputContainer').appendChild(container);
 
             html2canvas(container).then(canvas => {
-                document.getElementById('outputContainer').innerHTML = '';
                 const image = new Image();
                 image.src = canvas.toDataURL('image/png');
                 image.style.width = '100%';
                 image.style.height = 'auto';
-                document.getElement
+                document.getElementById('outputContainer').innerHTML = '';
+                document.getElementById('outputContainer').appendChild(image);
+            });
+        });
+    </script>
+</body>
+</html>
