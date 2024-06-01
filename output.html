@@ -54,15 +54,15 @@
                 container.appendChild(output);
             });
 
-            document.getElementById('outputContainer').appendChild(container);
+            document.body.appendChild(container);
 
             html2canvas(container).then(canvas => {
                 const image = new Image();
                 image.src = canvas.toDataURL('image/png');
                 image.style.width = '100%';
                 image.style.height = 'auto';
-                document.getElementById('outputContainer').innerHTML = '';
-                document.getElementById('outputContainer').appendChild(image);
+                document.body.innerHTML = '';
+                document.body.appendChild(image);
             });
         });
     </script>
