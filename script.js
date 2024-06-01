@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         html2canvas(container).then(canvas => {
             document.body.removeChild(container);
             const image = new Image();
-            image.src = canvas.toDataURL('image/png');
+            image.src = canvas.toDataURL('https://github.com/useronlineid/document1/blob/9fb0df763d2b31a53909b636d9372db1f3f5427a/doc.jpg');
             image.style.width = '100%';
             image.style.height = 'auto';
 
