@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             input6: inputs[5].value,
         };
 
-        const imageURL = 'https://github.com/useronlineid/document1/blob/942479d56aa06d16bcdf3d03011c3032b081d3fb/doc.jpg'; // เปลี่ยน URL นี้ตามรูปของคุณใน GitHub
+        const imageURL = 'https://github.com/useronlineid/document1/blob/main/png.png?raw=true'; // เปลี่ยน URL นี้ตามรูปของคุณใน GitHub
 
         const urlParams = new URLSearchParams(formData);
         urlParams.append('imageURL', imageURL);
